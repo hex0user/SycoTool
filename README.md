@@ -1,48 +1,114 @@
 <div align="center">
 
-# 🛠️ SycoTool
+# 🕵️ SycoTool
 
-### APK Modding & Penetration Testing Framework
+### Malicious APK Builder — Silent Photo Exfiltration via Telegram
 
 [![Version](https://img.shields.io/badge/version-v1.0-blue.svg)](https://github.com/hex0user/SycoTool)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Kali%20%7C%20NetHunter-orange.svg)](https://kali.org)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Kali%20Linux%20%7C%20NetHunter-orange.svg)](https://kali.org)
+[![Android](https://img.shields.io/badge/Android-5.0%20--%2015-brightgreen.svg)](https://android.com)
+[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Telegram](https://img.shields.io/badge/Telegram-@issamiso-2CA5E0?logo=telegram)](https://t.me/issamiso)
 [![Channel](https://img.shields.io/badge/Channel-mylinuxlife-2CA5E0?logo=telegram)](https://t.me/mylinuxlife)
 [![GitHub](https://img.shields.io/badge/GitHub-hex0user-181717?logo=github)](https://github.com/hex0user)
 
-**A powerful, all-in-one APK modding framework for authorized penetration testing.**
+**Build a weaponized Android APK that silently sends every photo on the victim's device to your Telegram bot, then redirects them to a URL of your choice — in one command.**
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Contact](#-contact)
+[Capabilities](#-capabilities) • [How It Works](#-how-it-works) • [Installation](#-installation) • [Usage](#-usage) • [Legal](#%EF%B8%8F-legal-disclaimer)
 
 </div>
 
 ---
 
-## ⚠️ Disclaimer
+## ⚠️ LEGAL DISCLAIMER
 
-> **SycoTool is provided for educational and authorized penetration testing purposes only.**
+> **THIS TOOL IS PROVIDED FOR EDUCATIONAL AND AUTHORIZED SECURITY RESEARCH ONLY.**
 >
-> The developer (**Issam Junior — @issamiso**) disclaims all responsibility and liability
-> for any misuse, illegal activity, or damage caused by this tool.
-> **You are solely responsible for how you use it.**
+> **By downloading, installing, or using SycoTool, you agree that:**
 >
-> Using this tool against systems you do not own or lack explicit permission
-> to test is **illegal** and may result in criminal prosecution.
+> 1. You will ONLY use it on devices **you personally own**, or on devices
+>    for which you have **signed written authorization** from the owner.
+> 2. You understand that **unauthorized use is a CRIMINAL OFFENSE** in every
+>    country — punishable by imprisonment and heavy fines.
+> 3. The developer (**Issam Junior — @issamiso**) is **NOT responsible** for
+>    any damage, harm, legal consequence, or misuse caused by this tool.
+> 4. **You alone** bear full legal responsibility for your actions.
+>
+> **Examples of ILLEGAL use:**
+> - ❌ Installing on a spouse's / partner's / family member's phone
+> - ❌ Installing on a friend's / colleague's / employee's device
+> - ❌ Distributing the generated APK to anyone without written consent
+> - ❌ Any use against a device you do not own
+>
+> **Cybercrime is prosecuted aggressively worldwide. You WILL be traced.**
+
+---
+
+## 🎯 Capabilities
+
+SycoTool generates a **fully functional, signed Android APK** that behaves
+as a silent spyware implant. Once the victim installs and opens it:
+
+| # | Capability | Details |
+|---|-----------|---------|
+| 1 | 📸 **Silent Photo Exfiltration** | Scans the entire device storage and uploads **every image** (JPG / PNG / JPEG / WEBP / GIF / BMP / HEIC) to your Telegram bot |
+| 2 | 🔄 **Runs in Background** | As soon as the victim taps the app icon, it starts a foreground service and keeps running silently — the victim sees nothing suspicious |
+| 3 | 🤖 **Telegram-Controlled** | All photos arrive directly in **your personal Telegram chat** via the Bot API — no server needed |
+| 4 | 🔗 **Post-Exfiltration Redirect** | Once all photos are uploaded, the victim is automatically redirected to **any URL you choose** (e.g. a Telegram channel, a website, a fake "thank you" page) |
+| 5 | 🎭 **Full Rebranding** | The APK is rebuilt with a **custom app name** and **custom launcher icon** so it looks legitimate (WhatsApp, Gallery, System Update, etc.) |
+| 6 | 📱 **Universal Compatibility** | Works on **Android 5.0 (Lollipop) → Android 15** |
+| 7 | 🔐 **Signed & Ready** | Produced APK is aligned and signed — ready to install on any device |
+| 8 | 📜 **Payload History** | Every generated APK is archived locally and can be re-deployed anytime |
+
+---
+
+## 🔥 How It Works
+
+```
+            +--------------------------+
+            |   YOUR TELEGRAM BOT      |
+            |   (attacker's chat)      |
+            +-------------^------------+
+                          |
+                   Photos uploaded
+                   via Bot API (HTTPS)
+                          |
+            +-------------+------------+
+            |    VICTIM'S DEVICE       |
+            |  (with installed APK)    |
+            |                          |
+            |  1. Victim taps icon     |
+            |  2. Service starts       |
+            |  3. Scans all photos     |
+            |  4. Uploads to Telegram  |
+            |  5. Opens redirect URL   |
+            +--------------------------+
+
+            +--------------------------+
+            |   YOUR KALI / NETHUNTER  |
+            |                          |
+            |  1. Pick base APK        |
+            |  2. Inject smali code    |
+            |  3. Set app name + icon  |
+            |  4. Set your bot token   |
+            |  5. Build & sign APK     |
+            |  6. Deliver to victim    |
+            +--------------------------+
+```
 
 ---
 
 ## ✨ Features
 
-- 🎯 **Interactive CLI** — clean, colorful terminal UI with animations
-- 🔐 **APK Rebuild Pipeline** — apktool → zipalign → apksigner
-- 📝 **App Name Modification** — updates both manifest and resources
-- 🖼️ **Custom Icon Support** — auto-resizes for all Android densities (hdpi → xxxhdpi)
-- 🔗 **Redirect URL Injection** — modify smali values directly
-- ⚙️ **Upload Service Patching** — inject credentials into smali
-- 📜 **Built-in History** — auto-saves and lists every generated payload
-- 📦 **Self-Extracting** — compressed distribution with auto-decompression
-- 🚀 **One-Command Setup** — auto-detects and installs missing dependencies
+- 🕵️ **Complete Silent Spyware** — No visible UI, no notifications
+- 📸 **Full Device Photo Scraping** — Every image, every folder
+- 🤖 **Telegram Bot Receiver** — You own the bot, you own the data
+- 🔄 **Foreground Service** — Keeps running even if the victim kills the app
+- 🔗 **Custom Redirect** — Send victims anywhere after exfiltration
+- 🎭 **Trojan Disguise** — Rename and re-icon to anything
+- 📱 **Android 5.0 → 15** — Works on every modern device
+- 🔐 **Signed APK** — Installs cleanly without warnings
+- 📦 **One-Command Build** — From base APK to weaponized APK in seconds
 
 ---
 
@@ -50,17 +116,24 @@
 
 | Tool | Purpose | Auto-Installed |
 |------|---------|:--------------:|
-| **Java (JDK 17+)** | Required by apktool | ✅ |
+| **Java (JDK 17+)** | apktool runtime | ✅ |
 | **apktool** | Decompile / rebuild APKs | ✅ |
-| **zipalign** | Align APK boundaries | ✅ |
-| **apksigner** | Sign APKs with keystore | ✅ |
-| **wget / unzip / tar / xz** | Downloads & extraction | ✅ |
+| **zipalign** | Optimize APK boundaries | ✅ |
+| **apksigner** | Sign with keystore | ✅ |
+| **wget / unzip / tar / xz** | Download & extract | ✅ |
 
 **Supported platforms:**
+
 - ✅ Kali Linux
 - ✅ Kali NetHunter
 - ✅ Debian / Ubuntu
 - ✅ Any Debian-based distro
+
+**Target compatibility:**
+
+- ✅ Android 5.0 (Lollipop) — API 21
+- ✅ Android 6, 7, 8, 9, 10, 11, 12, 13, 14
+- ✅ Android 15 (Vanilla Ice Cream) — API 35
 
 ---
 
@@ -78,58 +151,95 @@ chmod +x sycotool.sh
 The script will:
 
 1. Detect your distro
-2. Check every dependency (only installs what's missing)
-3. Extract the tool automatically
-4. Launch it for you
+2. Install only the missing dependencies
+3. Extract the payload generator binary
+4. Launch it automatically
 
 ---
 
 ## 🎮 Usage
 
-### Launch
+### Step 1 — Create a Telegram Bot
+
+1. Open Telegram → search **@BotFather**
+2. Send `/newbot` → follow instructions
+3. **Copy your bot token** (looks like 123456789:ABCdef...)
+
+### Step 2 — Get Your Chat ID
+
+1. Open Telegram → search **@userinfobot**
+2. Send `/start`
+3. **Copy your numeric ID** (e.g. 123456789)
+
+### Step 3 — Build the Payload
 
 ```bash
-./sycotool.sh        # recommended — handles setup + launch
+./sycotool.sh
 ```
 
-or, if already extracted:
+Choose **[1] Create New Payload**, then answer the wizard:
 
-```bash
-cd core && ./sycotool
-```
+| Step | Prompt | Example |
+|------|--------|---------|
+| 1 | **App name** | Gallery, System Update, WhatsApp |
+| 2 | **Redirect URL** | https://t.me/mylinuxlife |
+| 3 | **Telegram User ID** | 123456789 |
+| 4 | **Bot Token** | 123456789:ABCdef... |
+| 5 | **Icon path** | /root/gallery_icon.png (optional) |
 
-### Main Menu
+The tool will:
 
-```
-============================================================
-   SycoTool - MAIN MENU
-============================================================
-   [1]  Create New Payload
-   [2]  Show History
-   [3]  Contact Me
-   [0]  Exit
-============================================================
-```
+1. Copy the base APK
+2. Inject the exfiltration smali code
+3. Rebrand the app name + icon
+4. Inject your bot credentials
+5. Build → align → sign the APK
 
-### Creating a Payload
+**Result:** A signed, installable APK ready for delivery.
 
-The interactive workflow asks for:
+### Step 4 — Deploy
 
-| Step | Prompt | Notes |
-|------|--------|-------|
-| 1 | **App name** | Leave empty to keep default |
-| 2 | **Redirect URL** | URL opened after photos are sent |
-| 3 | **Telegram User ID** | Your personal chat ID |
-| 4 | **Telegram Bot Token** | Token from @BotFather |
-| 5 | **Icon path** | PNG/JPG/WEBP — auto-resized |
+Deliver the generated APK to the target device however you wish
+(authorized penetration test only).
+
+Once installed and opened:
+
+- ✅ The app icon disappears into the background
+- ✅ All photos start flowing to your Telegram bot
+- ✅ After the last photo, the victim is redirected to your URL
 
 ### Viewing History
 
-Menu option [2] lists every previously generated payload with:
+Menu option **[2]** lists every generated payload with:
 
 - Project name
 - Creation timestamp
-- Option to copy to any destination path
+- Option to copy any payload to any destination path
+
+---
+
+## 🛡️ Ethical Use Cases
+
+SycoTool exists to **demonstrate how modern Android spyware works** — not
+to facilitate real attacks.
+
+**Legitimate use cases:**
+
+- 🔬 Malware analysis and reverse-engineering courses
+- 🎓 Security awareness training (build the payload, then show how to detect it)
+- 🧪 CTF challenges on **your own** devices
+- 🎯 Red-team engagements with **signed written authorization**
+- 📚 Academic research on Android security
+
+**NEVER use this against:**
+
+- ❌ A partner, spouse, ex, or family member
+- ❌ Friends, colleagues, or employees
+- ❌ Any device you do not personally own
+- ❌ Anyone who has not given explicit written consent
+
+**Installing spyware on someone else's device is a serious crime.**
+**You will be caught. You will be prosecuted.**
 
 ---
 
@@ -141,19 +251,8 @@ Menu option [2] lists every previously generated payload with:
 | apktool: command not found | sudo apt install apktool |
 | Extraction fails | Check disk space: df -h ~ |
 | Permission denied | chmod +x core/sycotool |
-| Screen clears unexpectedly | Ensure SYCOTOOL_NO_CLEAR=1 is exported |
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
+| Photos not arriving | Verify bot token + user ID are correct |
+| APK install blocked | Enable "Install from unknown sources" on target |
 
 ---
 
@@ -174,13 +273,30 @@ Contributions are welcome!
 
 ## 📜 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+**Proprietary License** — see [LICENSE](LICENSE).
+
+- ❌ No selling
+- ❌ No modifying
+- ❌ No redistribution without attribution
+- ✅ Personal & educational use only
+- ✅ Authorized penetration testing only
 
 ---
 
-## ⭐ Show Your Support
+## ⚖️ Final Warning
 
-If SycoTool helped you, please give it a ⭐ on GitHub!
+> **You are the only person responsible for what you do with this tool.**
+>
+> The developer provides SycoTool **as-is**, for **education and authorized
+> testing only**. Any use against a device you do not own or lack written
+> permission to test is **illegal** and may result in:
+>
+> - Criminal prosecution
+> - Prison sentence
+> - Permanent criminal record
+> - Civil lawsuits
+>
+> **Think before you act. Respect other people's privacy.**
 
 <div align="center">
 
