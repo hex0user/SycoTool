@@ -1,0 +1,207 @@
+================================================================================
+                    SYCOTOOL — PROPRIETARY LICENSE
+                    Copyright (c) 2026 Issam Junior (@hex0user)
+================================================================================
+
+                            ALL RIGHTS RESERVED.
+
+This license governs the use, distribution, and modification of the software
+known as "SycoTool" (the "Software"), created and owned by Issam Junior
+(GitHub: @hex0user | Telegram: @issamiso).
+
+By downloading, installing, copying, or using the Software, you (the "User")
+agree to be bound by the terms of this license. If you do not agree with any
+part of these terms, you MUST NOT use the Software and must delete all copies
+in your possession immediately.
+
+
+--------------------------------------------------------------------------------
+1. GRANT OF LICENSE
+--------------------------------------------------------------------------------
+
+Subject to the terms and conditions below, you are granted a limited,
+non-exclusive, non-transferable, revocable license to:
+
+    (a) Use the Software for personal, educational, or authorized
+        penetration testing purposes only.
+
+    (b) Run the Software on your own devices or on systems for which you
+        hold explicit written authorization from the owner.
+
+
+--------------------------------------------------------------------------------
+2. RESTRICTIONS
+--------------------------------------------------------------------------------
+
+You are EXPRESSLY PROHIBITED from doing any of the following, in whole or
+in part, without prior written permission from the author:
+
+    (a) SELLING — You may NOT sell, resell, rent, lease, sublicense, or
+        otherwise commercialize the Software, or any derivative of it,
+        in any form.
+
+    (b) MODIFICATION — You may NOT modify, alter, adapt, translate,
+        decompile, reverse-engineer, disassemble, or create derivative
+        works based on the Software, its source code, its compiled
+        binary, or any portion thereof.
+
+    (c) REDISTRIBUTION — You may NOT redistribute, publish, upload,
+        mirror, or share the Software in any form (source, binary,
+        compressed, or otherwise) without:
+            i.   Providing clear, visible attribution to the original
+                 author (Issam Junior — @hex0user / @issamiso), AND
+            ii.  Including a direct link to the official repository:
+                 https://github.com/hex0user/SycoTool
+            iii. Including a copy of this LICENSE file, unmodified.
+
+    (d) REBRANDING — You may NOT remove, obscure, or alter any copyright
+        notices, author names, watermarks, or embedded credits appearing
+        in the Software, its interface, or its documentation.
+
+    (e) BYPASSING PROTECTION — You may NOT attempt to bypass, remove, or
+        circumvent any security feature, license check, obfuscation, or
+        protection mechanism present in the Software.
+
+    (f) ILLEGAL USE — You may NOT use the Software for any illegal,
+        malicious, or unauthorized purpose, including but not limited to
+        attacking systems without explicit permission, spreading malware,
+        or violating any applicable law.
+
+
+--------------------------------------------------------------------------------
+3. ATTRIBUTION REQUIREMENTS
+--------------------------------------------------------------------------------
+
+Any permitted use, mention, or reference to the Software MUST include:
+
+    • Author name : Issam Junior
+    • GitHub      : https://github.com/hex0user
+    • Telegram    : https://t.me/issamiso
+    • Channel     : https://t.me/mylinuxlife
+    • Repository  : https://github.com/hex0user/SycoTool
+
+Attribution must be clearly visible and not hidden, minimized, or
+misrepresented.
+
+
+--------------------------------------------------------------------------------
+4. NO WARRANTY
+--------------------------------------------------------------------------------
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+THE AUTHOR MAKES NO GUARANTEE THAT THE SOFTWARE WILL BE ERROR-FREE,
+SECURE, UNINTERRUPTED, OR SUITABLE FOR ANY PARTICULAR PURPOSE.
+
+YOU USE THE SOFTWARE ENTIRELY AT YOUR OWN RISK.
+
+
+--------------------------------------------------------------------------------
+5. LIMITATION OF LIABILITY
+--------------------------------------------------------------------------------
+
+IN NO EVENT SHALL THE AUTHOR (ISSAM JUNIOR) BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES,
+INCLUDING BUT NOT LIMITED TO:
+
+    • Loss of data, profits, or business
+    • Device damage or malfunction
+    • Legal consequences arising from misuse
+    • Any damage caused by third parties using the Software
+
+This limitation applies regardless of the legal theory under which the
+claim is brought, even if the author has been advised of the possibility
+of such damages.
+
+
+--------------------------------------------------------------------------------
+6. DISCLAIMER — LEGAL USE ONLY
+--------------------------------------------------------------------------------
+
+This Software is provided EXCLUSIVELY for:
+
+    • Educational purposes
+    • Authorized penetration testing
+    • Security research with explicit permission
+
+The author (Issam Junior) disclaims ALL responsibility and liability for:
+
+    • Any misuse of the Software
+    • Any illegal activity performed with it
+    • Any damage caused to any system, device, or person
+
+The User is SOLELY RESPONSIBLE for:
+
+    • Ensuring they have explicit written permission to test any target
+    • Complying with all applicable local, national, and international laws
+    • Any and all consequences resulting from their use of the Software
+
+Using this Software against systems you do not own or lack permission to
+test is ILLEGAL and may result in criminal prosecution. The author will
+fully cooperate with law enforcement in case of misuse.
+
+
+--------------------------------------------------------------------------------
+7. TERMINATION
+--------------------------------------------------------------------------------
+
+This license is effective until terminated. It will terminate automatically,
+without notice, if you breach any of its terms.
+
+Upon termination, you MUST:
+
+    • Immediately stop using the Software
+    • Delete all copies in your possession
+    • Destroy any derivative materials
+
+Termination does not limit the author's right to pursue legal remedies
+for damages caused by the breach.
+
+
+--------------------------------------------------------------------------------
+8. ENFORCEMENT
+--------------------------------------------------------------------------------
+
+Any violation of this license constitutes:
+
+    • Copyright infringement
+    • Breach of contract
+    • Potential criminal offense (depending on jurisdiction)
+
+The author reserves the right to take any legal action necessary to
+protect their intellectual property, including DMCA takedown requests,
+platform reports, and civil litigation.
+
+
+--------------------------------------------------------------------------------
+9. GOVERNING TERMS
+--------------------------------------------------------------------------------
+
+    • This license is the complete and exclusive statement of the terms
+      governing the Software.
+
+    • If any provision is found unenforceable, the remaining provisions
+      remain in full force.
+
+    • No waiver of any term shall be deemed a further or continuing
+      waiver of such term or any other term.
+
+
+--------------------------------------------------------------------------------
+10. CONTACT
+--------------------------------------------------------------------------------
+
+For permissions beyond the scope of this license, licensing inquiries,
+or reporting violations, contact:
+
+    Author    : Issam Junior
+    GitHub    : https://github.com/hex0user
+    Telegram  : https://t.me/issamiso
+    Channel   : https://t.me/mylinuxlife
+
+================================================================================
+                     © 2026 Issam Junior — ALL RIGHTS RESERVED
+                    Unauthorized use is strictly prohibited.
+================================================================================
