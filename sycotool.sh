@@ -152,10 +152,10 @@ install_java() {
     info "Java not found - installing JDK 17..."
     if [ "$HAS_SUDO" -eq 1 ]; then
         sudo apt-get update -y
-        sudo apt-get install -y openjdk-25-jdk
+        sudo apt-get install -y default-jdk
     else
         err "No sudo - cannot install Java automatically."
-        err "Please run:  sudo apt install openjdk-25-jdk"
+        err "Please run:  sudo apt install default-jdk"
         exit 1
     fi
     ok "Java 17 installed."
